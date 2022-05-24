@@ -10,6 +10,8 @@ body{
     justify-content: space-around;
     align-items: center;
     background: rgb(179, 125, 204);
+    width:100%;
+    height: 100%;
 }
 path {
     stroke: white;
@@ -18,4 +20,26 @@ path {
 h1, h2 {
     color:rgb(68, 22, 90);
     text-shadow: 1px 1px 1px white;
+}
+h1{
+    padding-top: 20px;
+}
+@media screen and (max-width:1024px){
+    #mainsvg{
+        transform: scale(.75);
+    }
+    /* #legend{
+        top: 150px;
+        left: 500px;
+    } */
+}
+@media screen and (max-width:768px){
+    #mainsvg{
+        transform: scale(.5);
+    }
+}
+@media screen and (max-width:475px){
+    #mainsvg{
+        transform: scale(.35);
+    }
 }
